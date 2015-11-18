@@ -1,0 +1,21 @@
+{
+	"name": "ixolit/dislo-php-client",
+	"description": "DistribLoad PHP Client",
+	"keywords": ["api"],
+	"license": "MIT",
+	"type": "project",
+	"require": {
+		"php": ">=5.4.0",
+		"ext-curl": "*"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "~4.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"Ixolit\\DisloApiClient\\": "src/"
+		}
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
+}
