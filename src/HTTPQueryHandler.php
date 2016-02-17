@@ -72,6 +72,7 @@ class HTTPQueryHandler {
 		curl_setopt($conn, CURLOPT_POST, 1);
 		curl_setopt($conn, CURLOPT_HTTPHEADER, $headers);
 		curl_setopt($conn, CURLOPT_POSTFIELDS, $body);
+		curl_setopt($conn, CURLOPT_HTTPHEADER, array('Expect:'));
 
 		$response = curl_exec($conn);
 		list($headers, $body) = explode("\r\n\r\n", $response, 2);
